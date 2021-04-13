@@ -24,6 +24,8 @@ jobs:
         git config --global user.name "github-actions[bot]"
     - name: Load upstream commits
       run: |
+        git fetch https://github.com/FilipePS/Traduzir-paginas-web.git master
+        git reset --hard origin/master
         git pull https://github.com/FilipePS/Traduzir-paginas-web.git --log --no-commit --rebase
     - name: Apply commit changes
       run: |
