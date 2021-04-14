@@ -26,6 +26,7 @@ jobs:
       run: |
         #git fetch https://github.com/FilipePS/Traduzir-paginas-web.git master
         #git reset --hard origin/master
+        git pull https://github.com/FilipePS/Traduzir-paginas-web.git --log --no-commit --rebase
         git add *
         git rebase --continue
         git pull https://github.com/FilipePS/Traduzir-paginas-web.git --log --no-commit --rebase
